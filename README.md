@@ -1,2 +1,2 @@
 # jupyter-examples
-Jupyter notebook examples for the OzNome data ecosystem
+Jupyter notebook examples from CSIRO Environmental Informatics
