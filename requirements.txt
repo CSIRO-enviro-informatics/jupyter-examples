@@ -1,0 +1,13 @@
+prov
+requests
+rdflib
+jinja2
+six
+pydotplus
+graphviz
+networkx 
+pandas
+scipy 
+matplotlib 
+xarray
+pydot
