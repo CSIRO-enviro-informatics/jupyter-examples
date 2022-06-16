@@ -1,0 +1,131 @@
+{
+  "prefix": {
+    "rrap": "https://rrap-is.com",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "wasGeneratedBy": {
+    "_:id1": {
+      "prov:entity": "rrap:output1",
+      "prov:activity": "rrap:counterfactualA"
+    },
+    "_:id12": {
+      "prov:entity": "rrap:output2",
+      "prov:activity": "rrap:counterfactualB"
+    }
+  },
+  "wasAssociatedWith": {
+    "_:id2": {
+      "prov:agent": "rrap:csiro",
+      "prov:activity": "rrap:counterfactualA"
+    },
+    "_:id3": {
+      "prov:agent": "rrap:peter",
+      "prov:activity": "rrap:counterfactualA"
+    },
+    "_:id13": {
+      "prov:agent": "rrap:csiro",
+      "prov:activity": "rrap:counterfactualB"
+    },
+    "_:id14": {
+      "prov:agent": "rrap:peter",
+      "prov:activity": "rrap:counterfactualB"
+    }
+  },
+  "used": {
+    "_:id4": {
+      "prov:entity": "rrap:coconet",
+      "prov:activity": "rrap:counterfactualA"
+    },
+    "_:id5": {
+      "prov:entity": "rrap:COTS5.1",
+      "prov:activity": "rrap:counterfactualA"
+    },
+    "_:id6": {
+      "prov:entity": "rrap:input_param_file",
+      "prov:activity": "rrap:counterfactualA"
+    },
+    "_:id7": {
+      "prov:entity": "rrap:input_config_file",
+      "prov:activity": "rrap:counterfactualA"
+    },
+    "_:id8": {
+      "prov:entity": "rrap:input1",
+      "prov:activity": "rrap:counterfactualA"
+    },
+    "_:id9": {
+      "prov:entity": "rrap:coconet",
+      "prov:activity": "rrap:counterfactualB"
+    },
+    "_:id10": {
+      "prov:entity": "rrap:output1",
+      "prov:activity": "rrap:counterfactualB"
+    },
+    "_:id15": {
+      "prov:entity": "rrap:COTS5.2",
+      "prov:activity": "rrap:counterfactualB"
+    },
+    "_:id16": {
+      "prov:entity": "rrap:input_param_file2",
+      "prov:activity": "rrap:counterfactualB"
+    },
+    "_:id17": {
+      "prov:entity": "rrap:input_config_file2",
+      "prov:activity": "rrap:counterfactualB"
+    }
+  },
+  "wasAttributedTo": {
+    "_:id11": {
+      "prov:entity": "rrap:output1",
+      "prov:agent": "rrap:peter"
+    },
+    "_:id18": {
+      "prov:entity": "rrap:output2",
+      "prov:agent": "rrap:peter"
+    }
+  },
+  "activity": {
+    "rrap:counterfactualA": {
+      "prov:startTime": "2022-06-16T14:54:02.809239",
+      "prov:endTime": "2022-06-16T15:24:02.809248"
+    },
+    "rrap:counterfactualB": {
+      "prov:startTime": "2022-06-16T14:54:03.355530",
+      "prov:endTime": "2022-06-16T15:24:03.355536"
+    }
+  },
+  "entity": {
+    "rrap:coconet": {
+      "rrap:source": "github.fake",
+      "rrap:version": "1.2.3"
+    },
+    "rrap:input1": {
+      "rrap:handle_id": "inputfakehandle",
+      "rrap:version": "1.2.3"
+    },
+    "rrap:input_param_file": {},
+    "rrap:input_config_file": {},
+    "rrap:COTS5.1": {},
+    "rrap:output1": {
+      "rrap:handle_id": "outputfakehandle",
+      "rrap:version": "1.2.4"
+    },
+    "rrap:input_param_file2": {},
+    "rrap:input_config_file2": {},
+    "rrap:COTS5.2": {},
+    "rrap:output2": {
+      "rrap:handle_id": "outputfakehandle2",
+      "rrap:version": "1.2.4"
+    }
+  },
+  "agent": {
+    "rrap:peter": {
+      "rrap:orcid": "https://orcid.org/fake",
+      "foaf:familyName": "Baker",
+      "foaf:givenName": "Peter"
+    },
+    "rrap:csiro": {
+      "foaf:name": "CSIRO",
+      "rrap:ror": "https://ror.org/fake"
+    }
+  }
+}

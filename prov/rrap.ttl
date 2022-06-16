@@ -1,0 +1,53 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rrap: <https://rrap-is.com> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+rrap:output2 a prov:Entity ;
+        prov:wasAttributedTo rrap:peter ;
+        prov:wasGeneratedBy rrap:counterfactualB ;
+        rrap:handle_id "outputfakehandle2"^^xsd:string ;
+        rrap:version "1.2.4"^^xsd:string .
+    rrap:COTS5.1 a prov:Entity .
+    rrap:COTS5.2 a prov:Entity .
+    rrap:counterfactualA a prov:Activity ;
+        prov:endedAtTime "2022-06-16T15:24:02.809248"^^xsd:dateTime ;
+        prov:startedAtTime "2022-06-16T14:54:02.809239"^^xsd:dateTime ;
+        prov:used rrap:COTS5.1,
+            rrap:coconet,
+            rrap:input1,
+            rrap:input_config_file,
+            rrap:input_param_file ;
+        prov:wasAssociatedWith rrap:csiro,
+            rrap:peter .
+    rrap:counterfactualB a prov:Activity ;
+        prov:endedAtTime "2022-06-16T15:24:03.355536"^^xsd:dateTime ;
+        prov:startedAtTime "2022-06-16T14:54:03.355530"^^xsd:dateTime ;
+        prov:used rrap:COTS5.2,
+            rrap:coconet,
+            rrap:input_config_file2,
+            rrap:input_param_file2,
+            rrap:output1 ;
+        prov:wasAssociatedWith rrap:csiro,
+            rrap:peter .
+    rrap:input1 a prov:Entity ;
+        rrap:handle_id "inputfakehandle"^^xsd:string ;
+        rrap:version "1.2.3"^^xsd:string .
+    rrap:input_config_file a prov:Entity .
+    rrap:input_config_file2 a prov:Entity .
+    rrap:input_param_file a prov:Entity .
+    rrap:input_param_file2 a prov:Entity .
+    rrap:output1 a prov:Entity ;
+        prov:wasAttributedTo rrap:peter ;
+        prov:wasGeneratedBy rrap:counterfactualA ;
+        rrap:handle_id "outputfakehandle"^^xsd:string ;
+        rrap:version "1.2.4"^^xsd:string .
+    rrap:coconet a prov:Entity ;
+        rrap:source "github.fake"^^xsd:string ;
+        rrap:version "1.2.3"^^xsd:string .
+    rrap:csiro a prov:Agent ;
+        foaf:name "CSIRO"^^xsd:string ;
+        rrap:ror "https://ror.org/fake"^^xsd:string .
+    rrap:peter a prov:Agent ;
+        foaf:familyName "Baker"^^xsd:string ;
+        foaf:givenName "Peter"^^xsd:string ;
+        rrap:orcid "https://orcid.org/fake"^^xsd:string .
