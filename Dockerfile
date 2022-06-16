@@ -33,7 +33,10 @@ RUN jupyter nbextension enable spellchecker/main
 RUN jupyter nbextension enable toggle_all_line_numbers/main
 
 # Add notebooks to the docker image
-
+ADD knowledge_network  	/home/jovyan/knowledge_network
+ADD linked_data        	/home/jovyan/linked_data
+ADD prov 		/home/jovyan/prov
+ADD xarray 		/home/jovyan/xarray
 
 
 USER root
